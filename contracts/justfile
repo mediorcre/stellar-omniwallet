@@ -1,0 +1,12 @@
+deploy-testnet:
+    stellar contract build
+    stellar contract deploy --wasm target/wasm32-unknown-unknown/release/soroban_account_contract.wasm --source alice --network testnet
+
+debug contract_id:
+    stellar contract invoke --id {{contract_id}} --network testnet --source alice -- get_debug1
+    stellar contract invoke --id {{contract_id}} --network testnet --source alice -- get_debug2
+    stellar contract invoke --id {{contract_id}} --network testnet --source alice -- get_debug3
+    stellar contract invoke --id {{contract_id}} --network testnet --source alice -- get_debug4
+    stellar contract invoke --id {{contract_id}} --network testnet --source alice -- get_debug5
+    stellar contract invoke --id {{contract_id}} --network testnet --source alice -- get_debug6
+    stellar contract invoke --id {{contract_id}} --network testnet --source alice -- get_debug7

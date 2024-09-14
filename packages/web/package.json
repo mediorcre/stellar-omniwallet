@@ -1,0 +1,52 @@
+{
+  "name": "omniwallet-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.1.5",
+    "@react95/core": "^8.1.1",
+    "@react95/icons": "^2.1.1",
+    "@stellar/stellar-sdk": "^12.2.0",
+    "@tanstack/react-query": "^5.52.2",
+    "base64url": "^3.0.1",
+    "buffer": "6.0.3",
+    "dotenv": "^16.4.5",
+    "invariant": "^2.2.4",
+    "omniwallet-bindings": "workspace:*",
+    "passkey-kit": "^0.6.0",
+    "react": "^18.3.1",
+    "react-confetti-explosion": "^2.1.2",
+    "react-dom": "^18.3.1",
+    "react-spinners": "^0.14.1",
+    "sweetalert2": "^11.14.0",
+    "viem": "^2.20.1",
+    "wagmi": "^2.12.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/invariant": "^2.2.37",
+    "@types/node": "^22.5.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1",
+    "vite-plugin-node-polyfills": "^0.22.0"
+  },
+  "packageManager": "pnpm@9.7.1+sha256.46f1bbc8f8020aa9869568c387198f1a813f21fb44c82f400e7d1dbde6c70b40"
+}
